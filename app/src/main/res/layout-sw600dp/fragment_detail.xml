@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_scrollview"
+    style="@style/MovieDetailTheme"
+    tools:context=".fragment.DescriptionTab"
+    tools:showIn="@layout/activity_detail">
+    <LinearLayout
+        style="@style/MovieDetailTheme.Vertical"
+        android:gravity="center_vertical"
+        android:baselineAligned="false"
+        android:minHeight="?android:attr/listPreferredItemHeight" >
+
+        <LinearLayout
+            style="@style/MovieDetailTheme.Horizontal"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/original_title"
+                style="@style/MovieDetailTheme"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/padding"
+                android:textColor="@color/colorTitle"
+                android:textSize="@dimen/medium_title_size"
+                android:fontFamily="sans-serif-condensed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MovieDetailTheme.Horizontal"
+            android:padding="@dimen/padding"
+            android:layout_weight="1"
+            android:baselineAligned="false">
+            <ImageView
+                android:id="@+id/movie_detail_thumbnail"
+                style="@style/DetailViewTheme"
+                android:paddingLeft="@dimen/padding_left"
+                android:paddingRight="@dimen/padding_right"
+                android:paddingStart="@dimen/padding_left"
+                android:paddingEnd="@dimen/padding_right"
+                android:contentDescription="@string/image_description"/>
+            <LinearLayout
+                style="@style/MovieDetailTheme.Vertical"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/release_date"
+                    style="@style/DetailViewTheme"
+                    android:textAppearance="?android:textAppearanceLarge"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginBottom="@dimen/margin"/>
+                <TextView
+                    android:id="@+id/user_reviews"
+                    style="@style/DetailViewTheme"
+                    android:textSize="@dimen/medium_subheading_size"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="@dimen/margin_bottom"/>
+                <ImageButton
+                    style="@style/DetailViewTheme"
+                    android:id="@+id/favorite_button_tab"
+                    android:layout_gravity="center"
+                    android:elevation="8dp"
+                    android:background="@color/colorTitle"
+                    android:contentDescription="@string/image_button" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MovieDetailTheme.Vertical"
+            android:layout_weight="2"
+            android:padding="@dimen/padding"
+            android:id="@+id/overview_layout">
+            <TextView
+                android:id="@+id/overview"
+                style="@style/DetailViewTheme"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/divider"/>
+
+        <TextView
+            style="@style/DetailViewTheme"
+            android:id="@+id/header"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"/>
+
+        <LinearLayout
+            style="@style/MovieDetailTheme"
+            android:orientation="horizontal">
+            <Button
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                android:layout_gravity="center"
+                android:id="@+id/trailer_button"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+            <Button
+                style="?android:attr/buttonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="8dp"
+                android:id="@+id/review_button"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

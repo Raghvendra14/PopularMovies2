@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/padding"
+    android:paddingStart="@dimen/padding"
+    android:paddingEnd="@dimen/review_right_padding"
+    android:paddingRight="@dimen/review_right_padding"
+    android:background="@drawable/touch_selector">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_home_page_text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:padding="@dimen/padding"/>
+</LinearLayout>

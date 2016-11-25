@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PosterGridStyle" parent="GridStyle">
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+    <style name="MovieDetailTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+</resources>

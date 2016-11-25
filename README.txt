@@ -1,0 +1,1 @@
+I have replaced my API Key for TheMovieDB.org with the string "ENTER YOUR API KEY HERE" and this app stores all of the data in the database and deletes the unnecessary data on the basis of not being in the current sort_by category, i.e., popular, top rated, favorite.

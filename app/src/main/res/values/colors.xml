@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#232323</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ff1c69</color>
+    <color name="colorTitleBackground">#029789</color>
+    <color name="colorTitle">#FFFFFF</color>
+    <color name="grey">#cccccc</color>
+    <color name="popularmovies_light_grey">#dfdfdf</color>
+</resources>
